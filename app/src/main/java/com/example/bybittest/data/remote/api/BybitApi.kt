@@ -1,8 +1,8 @@
 package com.example.bybittest.data.remote.api
 
-import com.example.bybittest.data.remote.dto.AnnouncementDto
+import com.example.bybittest.data.remote.dto.ApiResponseDto
 
 interface BybitApi {
 
-    suspend fun getAnnouncement(): List<AnnouncementDto>
+    suspend fun getAnnouncement(): ApiResponseDto
 }

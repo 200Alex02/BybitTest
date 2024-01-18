@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BybitTest</string>
+    <string name="last_announcement">Последние объявления</string>
 </resources>

@@ -7,5 +7,8 @@ data class Announcement(
     val description: String,
     val type: TypeDto,
     val tags: List<String>,
-    val url: String
+    val url: String,
+    val dateTimestamp: Long,
+    val startDateTimestamp: Long,
+    val endDateTimestamp: Long,
 )

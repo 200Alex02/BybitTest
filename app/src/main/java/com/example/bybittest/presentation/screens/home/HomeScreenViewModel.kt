@@ -25,7 +25,7 @@ class HomeScreenViewModel @Inject constructor(
                 when (result) {
                     is Resource.Success -> {
                         _state.value = HomeState(
-                            announcement = result.data ?: emptyList(),
+                            announcement = result.data?.resul?.list ?: emptyList(),
                             isLoading = false
                         )
                     }

@@ -1,7 +1,9 @@
 package com.example.bybittest.data.remote.dto
 
 import com.example.bybittest.domain.model.Announcement
+import kotlinx.serialization.Serializable
 
+@Serializable
 data class AnnouncementDto(
     val title: String,
     val description: String,
@@ -10,7 +12,7 @@ data class AnnouncementDto(
     val url: String,
     val dateTimestamp: Long,
     val startDateTimestamp: Long,
-    val endDateTimestamp: Long
+    val endDateTimestamp: Long,
 ) {
     fun toAnnouncement(): Announcement {
         return Announcement(
@@ -18,7 +20,10 @@ data class AnnouncementDto(
             description = description,
             type = type,
             tags = tags,
-            url = url
+            url = url,
+            dateTimestamp = dateTimestamp,
+            startDateTimestamp = startDateTimestamp,
+            endDateTimestamp = endDateTimestamp
         )
     }
 }
